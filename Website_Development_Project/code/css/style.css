@@ -1,0 +1,835 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-login, .btn-signup {
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-login {
+    background-color: #b8a017;
+    color: #fff;
+}
+
+.btn-signup {
+    background-color: #b8a017;
+    color: #000;
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/clooseup zoom hp.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eedada;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 2, 15, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+}
+
+.hero-btn {
+    padding: 15px 30px;
+    background-color: #b8a017;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #f0c420;
+}
+
+/* Products Section */
+.products {
+    padding: 20px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #ebe6cc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 368px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 109%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* About Section with Parallax Effect */
+.about {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-background {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/old hp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    background-color: rgba(240, 232, 232, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Reviews Section */
+.reviews {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-parallax {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/man_bg.jpeg'); /* Updated background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url('../images/man_bg.jpeg'); /* Adjust this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000; /* Text color for contrast */
+}
+
+.reviews-content {
+    background-color: rgba(240, 232, 232, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    color: #333;
+}
+
+.reviews-content h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reviews-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Reviews Section */
+.reviews {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    color: #333;
+}
+
+.review-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    position: relative;
+}
+
+.review-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: #444;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.review-slide.active {
+    opacity: 1;
+}
+
+/* Black Divider Strap Line */
+.black-divider {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    background-color: #70641e4d; /* Black background */
+    margin: 0px 0; /* Adds spacing around the divider */
+}
+
+/* Stay Connected Section */
+.stay-connected {
+    padding: 40px 5%;
+    background-color: #85846b;
+    color: #e9e3ff;
+    text-align: center;
+}
+
+.stay-connected h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.stay-connected form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.stay-connected input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 250px;
+}
+
+.stay-connected button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stay-connected button:hover {
+    background-color: #e0b200;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Sign-Up Section */
+.signup-section {
+    background-image: url('../images/tempo bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding-top: 80px; /* Offset for navbar */
+}
+
+.signup-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.signup-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.signup-form input:focus {
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.signup-btn {
+    padding: 15px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #f0c420;
+}
+
+.login-redirect {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-redirect a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    background-image: url('../images/tempo bg.png');
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding-top: 80px; /* Offset for navbar */
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.login-form input:focus {
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.login-btn {
+    padding: 15px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #f0c420;
+}
+
+.register-redirect {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.register-redirect a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #f5ebeb;
+    background-image: url(../images/Capture.JPG);
+    background-size: cover; /* Fix the image repetition */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+}
+
+.about-content {
+    max-width: 900px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight background to enhance readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: row; /* Cards in a row */
+    gap: 20px; /* Equal space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.about-card {
+    background-color: #e4d7c7;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1; /* Allow cards to grow equally */
+    min-width: 280px; /* Ensure equal size cards */
+    max-width: 280px; /* Ensure equal size cards */
+    height: 350px; /* Fixed height for equal-sized cards */
+}
+
+.about-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .about-details {
+        gap: 30px; /* Increase space between cards on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-section {
+        padding: 100px 40px; /* More space for larger screens */
+    }
+
+    .about-content {
+        max-width: 1100px; /* Increase width on larger screens */
+    }
+}
+
+html, body {
+    overflow-y: auto;
+    height: auto;
+}
+
+/* Product Showcase Styling */
+.product-showcase {
+    background-image: url('../images/sleek.jpg');
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontally center products */
+    align-items: center;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.product-display {
+    display: flex; /* Horizontally display product images */
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+    opacity: 0; /* Start hidden for fade-in effect */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.product-display.fade-in {
+    opacity: 1; /* Apply fade-in effect */
+}
+
+.product-display img {
+    width: 840px; /* Set width to a fixed value */
+    height: 495px; /* Set height to a fixed value */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 60px 60px rgba(0, 0, 0, 0.2);
+    margin: 0 40px; /* Space between images */
+}
+
+.product-item {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 68px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #1c0427;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #134094;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.product-item span {
+    font-size: 1.2rem;
+    color: #010820;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Navigation Buttons */
+.navigation {
+    position: absolute;
+    top: 91%; /* Adjusted positioning */
+    width: 113%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navigation button {
+    padding: 10px 15px;
+    background-color: #c9ae15;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover {
+    background-color: #726205;
+}
+
+/* Add to Cart Button Styling */
+#add-to-cart-btn { /* Applied specifically to the Add to Cart button */
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #c4a911b0; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+    margin-top: 15px;
+}
+
+#add-to-cart-btn:hover {
+    background-color: #b18a09; /* Darker blue when hovered */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#add-to-cart-btn:active {
+    background-color: #b18a09; /* Even darker when clicked */
+    transform: scale(1); /* Reset the zoom effect on click */
+}
+
+/* Additional button styling for better user experience */
+#add-to-cart-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 5px rgba(231, 235, 11, 0.849); /* Add blue glow on focus */
+}
+
+/* Cart Page Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+.cart {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.cart h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    border-top: 1px solid #ec2929;
+    border-bottom: 1px solid #f31414;
+    padding: 10px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e01010;
+}
+
+.cart-item-image {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.quantity {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.remove-btn {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+.cart-summary {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #3a3434;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.checkout-btn:hover,
+.remove-btn:hover {
+    background-color: #2c2a2a; /* Slightly darker shade */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Background image specifically for the cart page */
+body.cart-page {
+    background-image: url('../images/extra.jpg'); /* Adjust this path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000; /* Text color for contrast */
+}
+
+/* Adjust cart container styling for readability */
+.cart {
+    background-color: rgba(248, 238, 238, 0.7); /* Semi-transparent background */
+    padding: 80px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Verge | Tech Meets Fashion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Vanguard Verge</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="#">Contact</a>
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Vanguard Verge</h1>
+            <p>Experience the future of tech-infused fashion</p>
+            <a href="#products" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Section with Parallax Effect -->
+    <section class="about">
+        <div class="parallax-background">
+            <div class="about-content">
+                <h2>Innovative Design, Unmatched Style</h2>
+                <p>At Vanguard Verge, we blend technology with high fashion to bring you exclusive products that redefine modern style. Explore our range of smart accessories designed to make a statement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Black Strap Line Divider -->
+    <div class="black-divider"></div>
+
+    <!-- Reviews Section with Auto-Slide Effect -->
+    <section class="reviews">
+        <div class="reviews-content">
+            <h2>Reviews</h2>
+            <div class="review-slider">
+                <div class="review-slide active">
+                    <p>"Fantastic products! I love the quality and style. Nicola Styson."</p>
+                </div>
+                <div class="review-slide">
+                    <p>"Great customer service and fast shipping. Highly recommended! Billie Stylish."</p>
+                </div>
+                <div class="review-slide">
+                    <p>"Innovative designs that blend tech and fashion seamlessly. Harry Edward."</p>
+                </div>
+                <div class="review-slide">
+                    <p>"Absolutely love it! Will buy more for sure. Larry Stylinson"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Black Strap Line Divider -->
+    <div class="black-divider"></div>
+
+    <!-- Featured Products Section -->
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/wrist watch.avif" alt="Avant-garde Smart Watch" height="255px">
+                <h3>Avant-garde Smart Watch</h3>
+                <p>Seamlessly blending luxury and functionality.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/smart glasses 1.jpeg" alt="Precision Tech Glasses" height="255px">
+                <h3>Precision Tech Glasses</h3>
+                <p>See the world differently, with style.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/smart ring.webp" alt="Next-Gen Smart Wearable" height="255px">
+                <h3>Next-Gen Smart Wearable</h3>
+                <p>Style that responds to every move.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Black Strap Line Divider -->
+    <div class="black-divider"></div>
+
+    <!-- Stay Connected Section -->
+    <section class="stay-connected">
+        <h2>Stay Connected</h2>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vanguard Verge. All rights reserved.</p>
+    </footer>
+    
+    <!-- JavaScript for Auto-Slide Effect with Fade Transition -->
+    <script>
+        const slides = document.querySelectorAll(".review-slide");
+        let currentSlide = 0;
+        
+        function showNextSlide() {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }
+        
+        // Initial setup: show the first slide
+        slides[currentSlide].classList.add("active");
+        
+        // Auto-slide every 3 seconds
+        setInterval(showNextSlide, 3000);
+    </script>
+    
+</body>
+</html>

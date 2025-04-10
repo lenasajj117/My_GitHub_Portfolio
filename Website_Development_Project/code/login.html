@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Vanguard Verge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Vanguard Verge</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="#">Contact</a>
+            <a href="register.html" class="btn-signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Welcome Back</h2>
+            <p>Log in to your Vanguard Verge account</p>
+            <form action="php/login.php" method="POST" class="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+            <p class="register-redirect">Don’t have an account? <a href="register.html">Sign up here</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vanguard Verge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection | Vanguard Verge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Vanguard Verge</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html" class="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            <a href="login.html" class="btn-login">Log In</a>
+            <a href="register.html" class="btn-signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Product Showcase Section -->
+    <section class="product-showcase">
+        <div class="product-display fade-in">
+            <img id="product-image" src="images/future-ebike.webp" alt="Product Image">
+            
+            <!-- Product Information -->
+            <div class="product-item">
+                <h3 id="product-name">Future-eBike</h3>
+                <p id="product-description">Elegant, innovative design crafted for the discerning modern user.</p>
+                <span id="product-price">$299</span>
+
+                <!-- Add to Cart Button with ID for JavaScript targeting -->
+                <button type="button" id="add-to-cart-btn">Add to Cart</button>
+            </div>            
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button onclick="previousProduct()">&#10094; Previous</button>
+            <button onclick="nextProduct()">Next &#10095;</button>
+        </div>
+    </section>
+
+<script src="js/products.js"></script>
+</body>
+</html>
